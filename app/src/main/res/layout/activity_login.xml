@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_Login"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    android:background="@color/colorBackground"
+    tools:context=".LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:padding="40dp"
+            >
+
+            <ImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_avatar"
+                android:padding="32dp"
+                android:background="@drawable/avatar_background"
+                />
+
+            <TextView
+                android:id="@+id/tv_OTL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_heading"
+                android:fontFamily="@font/insanibu"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:layout_marginTop="20dp"
+                android:textSize="40sp"/>
+
+            <ImageView
+                android:id="@+id/iv_underline"
+                android:layout_marginTop="12dp"
+                android:layout_width="190dp"
+                android:layout_height="4dp"
+                android:background="@drawable/login_underline"
+                />
+
+            <EditText
+                android:id="@+id/et_rollNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="55dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="25sp"
+                android:textColor="#000"
+                android:hint="UNIQUE ID"
+                android:fontFamily="@font/montserrat_light"
+                android:background="@drawable/input_background"
+                android:drawableLeft="@drawable/id_tag"
+                android:drawablePadding="20dp"
+                />
+
+            <EditText
+                android:id="@+id/et_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textSize="25sp"
+                android:textColor="#000"
+                android:hint="USERNAME"
+                android:fontFamily="@font/montserrat_light"
+                android:background="@drawable/input_background"
+                android:drawableLeft="@drawable/person"
+                android:drawablePadding="20dp"
+                android:layout_marginBottom="20dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_welcomeBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back\n User"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@color/textColor"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:fontFamily="@font/insanibu"
+            tools:visibility="visible"
+            />
+
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:id="@+id/login_waveView"
+            android:transitionName="waveT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:wlv_borderColor="@color/colorAccent"
+            android:layout_gravity="bottom"
+            app:wlv_borderWidth="3dp"
+            app:wlv_progressValue="20"
+            app:wlv_shapeType="rectangle"
+            app:wlv_triangle_direction="north"
+            app:wlv_waveAmplitude="40"
+            app:wlv_waveColor="@color/colorPrimary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="30dp"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            >
+
+            <ImageButton
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/next"
+                android:padding="15dp"
+                android:background="@drawable/next_background"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AttendanceQR</string>
+    <string name="login_heading">ONE TIME LOGIN</string>
+</resources>

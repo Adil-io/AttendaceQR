@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context=".LoginActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:id="@+id/attendance_waveView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:wlv_borderColor="@color/colorAccent"
+            android:transitionName="waveT"
+            android:layout_gravity="bottom"
+            app:wlv_borderWidth="3dp"
+            app:wlv_progressValue="100"
+            app:wlv_shapeType="rectangle"
+            app:wlv_triangle_direction="north"
+            app:wlv_waveAmplitude="10"
+            app:wlv_waveColor="@color/colorPrimary"/>
+
+        <TextView
+            android:id="@+id/tv_loader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/textColor"
+            android:textSize="40sp"
+            android:fontFamily="@font/montserrat_light"
+            android:text="Loading Data\n Please Wait....."/>
+
+        <LinearLayout
+            android:id="@+id/ll_attendanceLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="40dp"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/tv_Attendance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ATTENDANCE"
+                android:textSize="40sp"
+                android:gravity="center"
+                android:layout_marginBottom="45dp"
+                android:fontFamily="@font/insanibu"
+                android:textColor="@color/textColor"/>
+
+            <Button
+                android:id="@+id/btn_entrance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MARK MY ENTRANCE"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:padding="22dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/attendance_btn_background"
+                />
+
+            <Button
+                android:id="@+id/btn_exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MARK MY EXIT"
+                android:fontFamily="@font/montserrat_light"
+                android:textColor="@color/textColor"
+                android:textSize="20sp"
+                android:padding="22dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/attendance_btn_background"
+                />
+
+        </LinearLayout>
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

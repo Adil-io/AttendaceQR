@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title Text"
+        android:fontFamily="@font/insanibu"
+        android:gravity="center"
+        android:textSize="45sp"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"/>
+
+    <ImageView
+        android:id="@+id/imageSlideIcon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/app_name" />
+
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:translationY="-20dp"
+        android:text="Description Text"
+        android:padding="22dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat_light"
+        android:background="@drawable/text_desc_background"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"
+        android:clickable="true"
+        />
+
+    <Button
+        android:id="@+id/btn_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:text="Allow Permissions"
+        android:background="@drawable/welcome_btn"
+        android:padding="15dp"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:fontFamily="@font/montserrat_light"/>
+
+
+</LinearLayout>

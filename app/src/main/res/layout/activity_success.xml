@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="15dp"
+    android:background="@color/colorBackground"
+    tools:context=".SuccessActivity">
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_marginTop="5dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="4"
+        android:textColor="@color/textColor"
+        android:textSize="25sp"
+        android:background="@drawable/timer_drawable"
+        android:fontFamily="@font/montserrat_light"/>
+
+    <SurfaceView
+        android:id="@+id/cameraSurfaceView"
+        android:layout_width="263dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_cheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="15dp"
+        android:text="Cheese!!"
+        android:textSize="20sp"
+        android:textColor="@color/textColor"
+        android:fontFamily="@font/montserrat_light"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Attendance Marked Successfully"
+            android:textSize="40sp"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:fontFamily="@font/insanibu"
+            />
+
+        <TextView
+            android:id="@+id/tv_closeApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Awaiting Image capture"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="20sp"
+            android:textColor="@color/textColor"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_end"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/tick"
+        android:visibility="gone"
+        />
+
+</LinearLayout>
